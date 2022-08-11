@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="testttttt"
+    />
+    <title>Pre Test - Full Stack Developer - CMLABS.CO</title>
+  </head>
+  <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    .main-title {
+        color: white;
+        font-size: 70px;
+        max-width: 51%;
+    }
+    #root p {
+        color: white;
+        max-width: 60%;
+        opacity: .7;
+    }
+    #root {
+        margin-inline: 100px;
+        margin-block: 100px;
+        padding-inline: 50px;
+        padding-block: 100px;
+        position: relative;
+    }
+    button.learn-more {
+        margin-top: 20px;
+        padding: 10px;
+        padding-inline: 30px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+    button.learn-more:hover {
+        cursor: pointer;
+        background-color: rgba(210,210,210,.2);
+    }
+    .posimg {
+        position: absolute;
+        top: 25%;
+        bottom: 20%;
+        right: 0px;
+        width: calc(0.35*100vw);
+        height: auto;
+    }
+    .body-container {
+      width: 70%;
+      padding-inline: 50px;
+      padding-block: 100px;
+      background-color: rgb(16, 214, 16);
+    }
+    @media screen and (max-width: 780px) {
+      .content-desktop {
+        display: none;
+      }
+      .content-mobile {
+        display: flex !important;
+        flex-direction: column;
+      }
+      .body-container {
+        width: 100%;
+        padding-inline: 0px;
+        padding-block: 40px;
+      }
+      .posimg {
+        position: inherit;
+      }
+      .main-title {
+        font-size: 60px;
+        max-width: 100%;
+        text-align: center;
+      }
+      .content-mobile .text-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .content-mobile .text-container p {
+        text-align: center;
+        width: 90%;
+      }
+      .content-mobile .text-container button {
+        margin-top: 50px;
+      }
+    }
+    .content-mobile {
+      display: none;
+      background-color: rgb(16, 214, 16);
+      color:white;
+    }
+    .content-mobile img {
+      width: 85%;
+      height: auto;
+      margin-top: 70px;
+    }
+  </style>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="content-desktop">
+        <div class="body-container">
+            <h1 class="main-title">LATEST <br/>DESIGN BLOGS</h1>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <img class="posimg" src="assets/workshop-009.jpg" />        
+    </div>
+    <div class="content-mobile">
+      <div class="body-container">
+        <h2 class="main-title">LATEST <br/>DESIGN BLOGS</h2>
+        <div class="text-container">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button class="learn-more">Learn More</button>
+          <img src="assets/workshop-009.jpg" />
+        </div>
+      </div>  
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
